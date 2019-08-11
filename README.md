@@ -11,3 +11,16 @@ Purpose of system calls:
 2. System security & stability: Kernels can arbitrate access beased on permissions, users and other criteria
 3. Virtualized environment - Enables to implement multitasking
 
+# APIs, POSIX and C library
+
+Example: call to printf() {APPLI} -> printf in C lib (CLIB) -> write() in the C lib (C LIB) -> write() system call {KERNEL}
+
+- API is based on POSIX which in turn is composed of IEEE standard
+- POSIX is a excellent relationship between APIs and system calls
+- C library implements the main API on the UNIX systems including the standard C library and the system call interface
+
+# Syscalls
+
+- System calls accessed via function calls defined in the C library
+- System calls provide a return value of type long that success or error. Mostly negative return value indicate error.
+-
